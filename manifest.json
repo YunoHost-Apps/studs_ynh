@@ -1,0 +1,61 @@
+{
+	"name": "StUdS",
+	"id": "studs",
+	"packaging_format": 1,
+	"requirements": {
+		"yunohost": ">= 3.4.0"
+	},
+	"description": {
+		"en": "A survey tool, the ancestor of OpenSondage"
+	},
+	"version": "0.6.5~ynh1",
+	"url": "https://sourcesup.cru.fr/projects/studs/",
+	"license": "CECILL-B",
+	"maintainer": {
+		"name": "Jean-Baptiste Holcroft",
+		"email": "jean-baptiste@holcroft.fr"
+	},
+	"multi_instance": false,
+	"services": [
+		"nginx",
+		"php-fpm"
+	],
+	"arguments": {
+		"install" : [
+			{
+				"name": "domain",
+				"type": "domain",
+				"ask": {
+					"en": "Choose a domain:"
+				},
+				"example": "domain.org"
+			},
+			{
+				"name": "path",
+				"type": "path",
+				"ask": {
+				    "en": "Choose a path:"
+				},
+				"example": "/studs",
+				"default": "/studs"
+			},
+			{
+				"name": "is_public",
+				"type": "boolean",
+				"ask": {
+					"en": "Should StUdS be accessible to everyone?"
+				},
+				"default": "0"
+			},
+			{
+				"name": "language",
+				"type": "string",
+				"ask": {
+					"en": "Should StUdS be accessible to everyone?"
+				},
+				"choices" : ["FR", "EN", "ES", "DE"],
+				"default": "FR"
+			}
+		]
+	}
+}

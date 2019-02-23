@@ -1,0 +1,6 @@
+SOURCE_URL=https://sourcesup.cru.fr/frs/download.php/file/3173/studs_0.6.5.tar.gz
+SOURCE_SUM=87a1f1e00f8e6f3cf12e0266714ef05d0aa9ffee0dc61cbecba2c0224ffdcc1e
+SOURCE_SUM_PRG=sha256sum
+SOURCE_FORMAT=tar.gz
+SOURCE_IN_SUBDIR=true
+SOURCE_FILENAME=
