@@ -51,7 +51,7 @@
 				"name": "language",
 				"type": "string",
 				"ask": {
-					"en": "Should StUdS be accessible to everyone?"
+					"en": "What is the default language?"
 				},
 				"choices" : ["FR", "EN", "ES", "DE"],
 				"default": "FR"
